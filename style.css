@@ -21,25 +21,34 @@ ul, a {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .content-one {
     display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 .content-two {
     display: flex;
+    flex: 1;
 }
 
 .content-three {
     background-color: #e5e7eb;
     display: flex;
+    flex: 1;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 36px;
 }
 
 .content-four {
     display: flex;
     justify-content: space-around;
+    flex: 1;
 }
 
 .action-card, button {
