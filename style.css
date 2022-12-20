@@ -2,6 +2,8 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
 }
 
 ul, a {
@@ -27,6 +29,13 @@ ul, a {
     display: flex;
     flex: 1;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content-one h3 {
+    font-size: 48px;
+    font-weight: 800;
 }
 
 .content-one img {
@@ -37,18 +46,20 @@ ul, a {
 
 .content-two {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .card-title {
     font-size: 36px;
+    align-self: center;
 }
 
 .cards {
     display: flex;
-    max-width: 70%;
+    flex-wrap: wrap;
+    width: 50px;
 }
 
 .content-two img {
@@ -61,12 +72,19 @@ ul, a {
 .content-three {
     background-color: #e5e7eb;
     font-size: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.quote-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
 }
 
 .content-four {
     display: flex;
     justify-content: space-around;
-    flex: 1;
 }
 
 .action-card, button {
@@ -75,7 +93,9 @@ ul, a {
 }
 
 .action-card {
+    display: flex;
     padding: 15px;
+    margin: 75px;
 }
 
 .footer {
